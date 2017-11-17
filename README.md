@@ -1,7 +1,12 @@
 # smart-array-to-tree
 Convert large amounts of data array to tree fastly!
 
-# example
+# Installation
+```javascript
+  npm i smart-arraytotree --save
+```
+# Example
+```javascript
 import smartArrayToTree from 'smart-arraytotree';
  let areas=[];//test data length 46086
  console.log("start time:"+moment().format("hh:mm:SSSS"))
@@ -10,3 +15,5 @@ import smartArrayToTree from 'smart-arraytotree';
  /*console*/
  //start time:05:54:4590
  //end time:05:54:6170
+ ```
+ 
