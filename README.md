@@ -25,7 +25,7 @@ fetch('https://raw.githubusercontent.com/internet5/smart-array-to-tree/master/ex
 }).catch(function(e) {
   console.log(e);
 });
-*console*/
+/*console*/
 //2017-11-21T09:51:37.930Z
 //2017-11-21T09:51:37.979Z
  ```
