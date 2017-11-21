@@ -1,6 +1,6 @@
 {
   "name": "smart-arraytotree",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Convert large amounts of data array to tree fastly",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,7 @@
     "lodash.groupby": "^4.6.0"
   },
   "devDependencies": {
+    "node-fetch": "^1.7.3",
     "tape": "^4.8.0"
   }
 }
