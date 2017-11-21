@@ -1,7 +1,7 @@
 'use strict';
 
 var groupBy = require('lodash.groupby')
-module.exports = ({ array, id = 'id', pid = 'pid', children = 'children', firstPid = null }) => {
+var smartArrayToTree = ({ array, id = 'id', pid = 'pid', children = 'children', firstPid = null }) => {
   array = groupBy(array, function (n) {
     return n.pid;
   });
@@ -16,3 +16,4 @@ module.exports = ({ array, id = 'id', pid = 'pid', children = 'children', firstP
   }
   return firstArray;
 }
+module.exports = smartArrayToTree;
