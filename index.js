@@ -5,7 +5,7 @@ const smartArrayToTree = ({ array, id = 'id', pid = 'pid', children = 'children'
   array = groupBy(array, function (n) {
     return n.pid;
   });
-  let firstArray = array[firstPid];
+  var firstArray = array[firstPid];
   transform(firstArray);
   function transform(startList) {
     if (startList)
