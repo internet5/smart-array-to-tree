@@ -3,7 +3,7 @@ var smartArrayToTree = require('../index.js');
 var test = require('tape');
 
 test('totree test', function (t) {
-	var list=[
+	let list=[
 	{
 		id:'1',
 		param1:'xx',
@@ -35,12 +35,9 @@ test('totree test', function (t) {
 		pid:'3',
 	},
 			]
-    var tree = smartArrayToTree({array:list});
+    let tree = smartArrayToTree({array:list});
 
     t.equal(tree.length, 3);
 
-	t.end();
+    t.end();
 });
-
-
-
