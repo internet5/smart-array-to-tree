@@ -1,4 +1,5 @@
 # smart-array-to-tree
+[![Build Status](https://travis-ci.org/internet5/smart-array-to-tree.svg?branch=master)](https://travis-ci.org/internet5/smart-array-to-tree)<br />
 Convert large amounts of data array to nested data structure fastly!<br />
 Use the test data that array length 46086, just take about 0.1 second.<br />
 <br />
