@@ -1,6 +1,6 @@
 # smart-array-to-tree
-Convert large amounts of data array to tree fastly!
-
+Convert large amounts of data array to nested data structure fastly!
+快速地转换数据量比较大的数组为树结构
 # Installation
 ```javascript
   npm i smart-arraytotree --save
@@ -10,7 +10,7 @@ Convert large amounts of data array to tree fastly!
 import smartArrayToTree from 'smart-arraytotree';
  let areas=[];//test data length 46086
  console.log("start time:"+moment().format("hh:mm:SSSS"))
- let tree=smartArrayToTree({array:areas,id:"id",pid:"pid",children:"children",firstPid:"xx"})
+ let tree=smartArrayToTree({array:areas,id:"id",pid:"pid",children:"children",firstPid:null})
  console.log("end time:"+moment().format("hh:mm:SSSS"))
  /*console*/
  //start time:05:54:4590
