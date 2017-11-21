@@ -10,12 +10,22 @@ Use the test data that array length 46086, just take about 0.1 second.<br />
 ```
 # Example
 ```javascript
-import smartArrayToTree from 'smart-arraytotree';
- let areas=[];//test data length 46086
- console.log("start time:"+moment().format("hh:mm:SSSS"))
- let tree=smartArrayToTree({array:areas,id:"id",pid:"pid",children:"children",firstPid:null})
- console.log("end time:"+moment().format("hh:mm:SSSS"))
- /*console*/
- //start time:05:54:4590
- //end time:05:54:6170
+var smartArrayToTree = require('../index.js');
+var fetch = require('node-fetch');
+//get test data length 46086
+fetch('https://raw.githubusercontent.com/internet5/smart-array-to-tree/master/example/data.json').then(function(response) {
+  return response.json();
+}).then(function(data) {
+  //start time
+  console.log(new Date());
+  //transform
+  let tree = smartArrayToTree({array:data, id:'regionId', pid:'parentId', firstPid:null });
+  //end time
+  console.log(new Date());
+}).catch(function(e) {
+  console.log(e);
+});
+*console*/
+//2017-11-21T09:51:37.930Z
+//2017-11-21T09:51:37.979Z
  ```
