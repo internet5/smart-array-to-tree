@@ -19,7 +19,7 @@ fetch('https://raw.githubusercontent.com/internet5/smart-array-to-tree/master/ex
   //start time
   console.log(new Date());
   //transform
-  let tree = smartArrayToTree({array:data, id:'regionId', pid:'parentId', firstPid:null });
+  let tree = smartArrayToTree(data, { id:'regionId', pid:'parentId', firstPid:null });
   //end time
   console.log(new Date());
 }).catch(function(e) {
