@@ -1,6 +1,6 @@
 {
   "name": "smart-arraytotree",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "Convert large amounts of data array to tree fastly",
   "main": "index.js",
   "scripts": {
