@@ -35,7 +35,7 @@ test('totree test', function (t) {
 		pid:'3',
 	},
 			]
-    let tree = smartArrayToTree({array:list});
+    let tree = smartArrayToTree(list);
 
     t.equal(tree.length, 3);
 
