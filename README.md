@@ -36,10 +36,10 @@ Convert a plain array of nodes (with pointers to parent nodes) to a a nested dat
 #### Parameters
 - **Array** `data`: An array of data
 - **Object** `options`: An object containing the following fields:
-  - `id` (String): An unique node identifier. Default: 'id'
-  - `pid` (String): A name of a property where a link to a parent node could be found. Default: 'pid'
-  - `children` (String): The child node name that you want. Default: 'children'
-  - `firstPid` (String): The parent id of fisrt level node . Default: null
+  - `id` (String): An unique node identifier. Default: 'id'
+  - `pid` (String): A name of a property where a link to a parent node could be found. Default: 'pid'
+  - `children` (String): The child node name that you want. Default: 'children'
+  - `firstPid` (String): The parent id of fisrt level node . Default: null
 
 #### Return
 - **Array**: Result of transformation
