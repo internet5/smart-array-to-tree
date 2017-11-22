@@ -5,7 +5,7 @@ fetch('https://raw.githubusercontent.com/internet5/smart-array-to-tree/master/ex
   return response.json();
 }).then(function(data) {
   console.log(new Date());
-  let tree = smartArrayToTree({array:data, id:'regionId', pid:'parentId', firstPid:null });
+  let tree = smartArrayToTree(data, { id:'regionId', pid:'parentId', firstPid:null });
   console.log(new Date());
   console.log(tree)
 }).catch(function(e) {
