@@ -1,7 +1,7 @@
 'use strict';
 
 var groupBy = require('lodash.groupby')
-const smartArrayToTree = (array, options) => {
+module.exports = function smartArrayToTree(array, options) {
   options = Object.assign({
     id: 'id',
     pid: 'pid',
@@ -22,5 +22,3 @@ const smartArrayToTree = (array, options) => {
   }
   return firstArray;
 }
-
-module.exports = smartArrayToTree;
