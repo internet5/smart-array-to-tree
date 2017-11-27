@@ -1,0 +1,24 @@
+<html>
+
+<head>
+  <title>Example</title>
+</head>
+
+<body>
+  <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+  <script src="smartArrayToTree.js"></script>
+  <script>
+    window.onload = function () {
+      $.getJSON("https://raw.githubusercontent.com/internet5/smart-array-to-tree/master/example/data.json", function (data) {
+        console.log(new Date());
+        var tree = smartArrayToTree(data, { id: 'regionId', pid: 'parentId', firstPid: null });
+        console.log(new Date());
+        console.log(tree)
+      });
+
+    }
+  </script>
+</body>
+
+</html>
