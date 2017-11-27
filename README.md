@@ -4,11 +4,12 @@ Convert large amounts of data array to nested data structure fastly!<br />
 Use the test data that array length 46086, just take about 0.1 second.<br />
 <br />
 快速地转换数据量比较大的数组为树结构，转换数组长度为46086的组数时，只花了大约0.1秒的时间，而其他转换工具对于这个数据量要么就是转换不正确，要么就是直接挂掉
-# Installation
-```javascript
-  npm i smart-arraytotree --save
+# Installation && Usage
+
+Using npm:
+```shell
+$ npm i smart-arraytotree --save
 ```
-# Example
 ```javascript
 var smartArrayToTree = require('../index.js');
 var fetch = require('node-fetch');
@@ -29,6 +30,26 @@ fetch('https://raw.githubusercontent.com/internet5/smart-array-to-tree/master/ex
 //2017-11-21T09:51:37.930Z
 //2017-11-21T09:51:37.979Z
  ```
+
+In a browser:
+```html
+<script src="smartArrayToTree.js"></script>
+```
+```html
+<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+  <script src="smartArrayToTree.js"></script>
+  <script>
+    window.onload = function () {
+      $.getJSON("https://raw.githubusercontent.com/internet5/smart-array-to-tree/master/example/data.json", function (data) {
+        console.log(new Date());
+        var tree = smartArrayToTree(data, { id: 'regionId', pid: 'parentId', firstPid: null });
+        console.log(new Date());
+        console.log(tree)
+      });
+    }
+  </script>
+```
 ## API
 ### `smartArrayToTree(data, [options])`
 Convert a plain array of nodes (with pointers to parent nodes) to a a nested data structure.
