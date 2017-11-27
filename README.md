@@ -1,3 +1,5 @@
+English | [简体中文](./README.zh-CN.md)
+
 # smart-array-to-tree
 [![Build Status](https://travis-ci.org/internet5/smart-array-to-tree.svg?branch=master)](https://travis-ci.org/internet5/smart-array-to-tree)<br />
 Convert large amounts of data array to nested data structure fastly!<br />
