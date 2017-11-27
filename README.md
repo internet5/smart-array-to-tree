@@ -6,7 +6,7 @@ Use the test data that array length 46086, just take about 0.1 second.<br />
 快速地转换数据量比较大的数组为树结构，转换数组长度为46086的组数时，只花了大约0.1秒的时间，而其他转换工具对于这个数据量要么就是转换不正确，要么就是直接挂掉
 # Installation && Usage
 
-Using npm:
+In Node.js:
 ```shell
 $ npm i smart-arraytotree --save
 ```
