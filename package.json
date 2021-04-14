@@ -1,5 +1,5 @@
 {
-  "name": "@internet5/smart-arraytotree",
+  "name": "smart-arraytotree",
   "version": "1.1.1",
   "description": "Convert large amounts of data array to tree fastly",
   "main": "index.js",
@@ -22,12 +22,5 @@
   "devDependencies": {
     "node-fetch": "^2.6.1",
     "tape": "^4.8.0"
-  },
-  "repository" : {
-    "type" : "git",
-    "url": "ssh://git@github.com/internet5/smart-array-to-tree.git"
-  },
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com/"
   },
 }
