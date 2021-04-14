@@ -2,6 +2,8 @@
 
 var groupBy = require('lodash.groupby')
  function smartArrayToTree(array, options) {
+  if(!array || array.length==0)
+	return array
   options = Object.assign({
     id: 'id',
     pid: 'pid',
