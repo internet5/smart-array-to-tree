@@ -22,5 +22,5 @@
   "devDependencies": {
     "node-fetch": "^2.6.1",
     "tape": "^4.8.0"
-  },
+  }
 }
